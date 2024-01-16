@@ -30,8 +30,8 @@ def shuffling(x, y):
 
 
 def load_data(path):
-    x = sorted(glob(os.path.join(path, "image", "*raw")))
-    y = sorted(glob(os.path.join(path, "mask", "*bmp")))
+    x = sorted(glob(os.path.join(path, "image", "*raw"))) #Modify according to the situation of your own dataset.
+    y = sorted(glob(os.path.join(path, "mask", "*bmp"))) #Modify according to the situation of your own dataset.
     return x, y
 
 def load_3ddata(path, width, height):
