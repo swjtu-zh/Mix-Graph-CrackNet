@@ -134,7 +134,7 @@ if __name__ == "__main__":
         TensorBoard(),
         # EarlyStopping(monitor='val_loss', patience=30, restore_best_weights=False),
     ]
-
+    """ Training """
     model.fit(
         train_dataset,
         epochs=num_epochs,
