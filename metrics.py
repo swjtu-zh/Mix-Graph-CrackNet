@@ -30,6 +30,9 @@ def loss(y_true, y_pred):
     total_loss = binary_loss + 0.5*dice_loss
     return total_loss
 
+def dice_loss(y_true, y_pred):
+    return 1.0 - dice_coef(y_true, y_pred)
+
 
 def iou_eval(y_true,y_pred):
     intersection = (y_true * y_pred).sum()
